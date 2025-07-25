@@ -20,7 +20,7 @@ It combines real-time hand tracking (using MediaPipe and OpenCV) with gesture re
 - Mouse control :	PyAutoGUI
 - Gesture storage	: SQLite
 - Web UI :	Flask
-- 
+ 
 ## How It Works 
 
 - Detects 21 hand landmarks in real time →
@@ -54,20 +54,20 @@ A flag file (resume_vmouse.flag) tells main app to resume
 
 ## Setup & Run
 
-- Clone the repository
-    git clone https://github.com/saumya-singh-14/AirMouse-AI-Virtual-Mouse-with-Custom-Shortcuts.git
+- Clone the repository  
+    git clone https://github.com/saumya-singh-14/AirMouse-AI-Virtual-Mouse-with-Custom-Shortcuts.git  
     cd vmouse5
 
-- (Optional) Create virtual environment with Python 3.9/3.10
-    python -m venv venv
-    .\venv\Scripts\activate        # Windows
+- (Optional) Create virtual environment with Python 3.9/3.10  
+    python -m venv venv  
+    .\venv\Scripts\activate        # Windows  
     source venv/bin/activate      # macOS/Linux
 
-- Install dependencies
+- Install dependencies  
     pip install -r requirements.txt
 
-- Initialize database (run once)
+- Initialize database (run once)  
     python database.py
 
-- Start the virtual mouse
+- Start the virtual mouse  
     python merged_vmouse.py
